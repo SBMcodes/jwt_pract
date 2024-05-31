@@ -1,0 +1,55 @@
+# Rest Client Extension
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltbXkiLCJpYXQiOjE3MTcxOTYyMjMsImV4cCI6MTcxNzE5NjIzOH0.m65DEtQ0QAiDxuAKeIljWu_65l0HaNw1Gm2TL8_QQrM
+
+
+###
+
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltbXkiLCJpYXQiOjE3MTcxOTYyMDZ9.XPl5vY8XWqUsirlQ5U6x5p7rmEQSKho38eJnMae-ORg"
+}
+
+
+###
+
+DELETE http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltbXkiLCJpYXQiOjE3MTcxOTYyMDZ9.XPl5vY8XWqUsirlQ5U6x5p7rmEQSKho38eJnMae-ORg"
+}
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"Jimmy"
+}
+
+###
+
+# GET http://localhost:3000/users
+
+# POST http://localhost:3000/users
+# Content-Type: application/json
+
+# {
+#     "name":"Sammy",
+#     "pwd":"password"
+# }
+
+# POST http://localhost:3000/users/login
+# Content-Type: application/json
+
+# {
+#     "name":"Sammy",
+#     "pwd":"password"
+# }
